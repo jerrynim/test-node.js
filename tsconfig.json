@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "ES2016",
+    "sourceMap": true,
+    "allowJs": true,
+    "noImplicitAny": false,
+    "strict": false,
+    "esModuleInterop": true,
+    "skipLibCheck": true
+  },
+  "exclude": ["node_modules", "build"]
+}
