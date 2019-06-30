@@ -9,6 +9,13 @@ const server = createServer(app); //http 서버 생성
 const wsServer = socketIO(server); // http server를 socket.io server로 upgrade한다
 wsServer.on("connection", (socket: any) => {
   console.log(`${socket}connected`);
+  console.log(socket.name);
+  setTimeout(() => {
+    socket.emit("good", "hoho");
+    wsServer.emit("good", "haha");
+    console.log("submit");
+  }, 5000);
+
   socket.on("message", () => {
     console.log("server take mesage");
   });
