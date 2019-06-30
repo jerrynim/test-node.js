@@ -1,9 +1,9 @@
-#gql-upload-sample
+#test at node.js
 
-graphql-upload, merge-graphql-schemas, express
+Mocha, chai, typescirpt, node-mocks-http, graphql ,websocket 을 이용한 테스트
 
-just have FileUpload API
+context 도 사용해보자
 
-graphql-upload 를 이용한 파일업로드 가능한 보일러 플레이트
+간단한 채팅을 만들어보자.
 
-https://velog.io/@jerrynim_/Graphql-%ED%8C%8C%EC%9D%BC-%EC%97%85%EB%A1%9C%EB%93%9C-tsjxekc19r
+[참고] : https://sjh836.tistory.com/174 , http://guswnsxodlf.github.io/how-to-test-express

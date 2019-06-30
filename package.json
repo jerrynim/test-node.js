@@ -6,11 +6,19 @@
   "license": "MIT",
   "dependencies": {
     "@types/chai": "^4.1.7",
+    "@types/socket.io": "^2.1.2",
+    "@types/ws": "^6.0.1",
+    "easygraphql-tester": "^5.1.5",
     "express": "^4.17.1",
     "graphql-tools": "^4.0.5",
     "graphql-upload": "^8.0.7",
     "graphql-yoga": "^1.18.0",
-    "merge-graphql-schemas": "^1.5.8"
+    "http": "^0.0.0",
+    "jest": "^24.8.0",
+    "merge-graphql-schemas": "^1.5.8",
+    "socket.io": "^2.2.0",
+    "socket.io-client": "^2.2.0",
+    "ws": "^7.0.1"
   },
   "devDependencies": {
     "@babel/core": "^7.4.5",
@@ -27,7 +35,7 @@
     "typescript": "^3.5.2"
   },
   "scripts": {
-    "start": "nodemon --exec ts-node src/server.ts -e ts,graphql",
-    "test": "mocha -r node_modules/ts-node/register test/**/*.test.ts"
+    "start": "nodemon --exec ts-node src/wsServer.ts -e ts,graphql",
+    "test": "mocha -r node_modules/ts-node/register test/*/*.test.ts test/*.test.ts"
   }
 }
